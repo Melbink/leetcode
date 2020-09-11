@@ -15,5 +15,5 @@ class Solution(object):
                 substr=s[i]
 
         return count
-ret=Solution().lengthOfLongestSubstring("pwwkew")
+ret=Solution().lengthOfLongestSubstring("pwwke")
 print(ret)
