@@ -48,7 +48,7 @@ def send_email_via_graph(token, from_email, to_email, subject, body):
     if response.status_code == 202:
         print(f"Email sent successfully to {to_email}")
     else:
-        print(f"Failed to send email. Response: {response.status_code}, {response.text}")
+        print(f"Failed to send email.. Response: {response.status_code}, {response.text}")
 
 # Main function to get the token and send the email
 def main():
