@@ -1,14 +1,15 @@
-class Solution:
-    def twoSum(nums, target):
-        hash={}
-        counter = len(nums)
-        for i in range(counter):
-            nimus=target-nums[i]
-            if nimus in hash.keys():
-                j=hash[nimus]
-                return [i,j]
-            else:
-                hash[nums[i]]=i
+class Solution(object):
+    def twoSum(self, nums, target):
+        indexnum={}
+        for i in range(len(nums)):
+            indexnum[nums[i]]=i
+        for i in range(len(nums)):
+            secondnum=target-nums[i]
+            if secondnum in indexnum and indexnum[secondnum]!=i:
+                return i, indexnum[secondnum]
         return []
-valu=Solution.twoSum([1,2,3,4,5],8)
-print(valu)
+    
+nums=[3,3]
+target=6
+sol = Solution()
+print(sol.twoSum(nums, target))
