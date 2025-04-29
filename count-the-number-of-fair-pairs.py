@@ -21,6 +21,7 @@ class Solution(object):
                     if(i>=0 and (nums[i]+nums[j]>=lower) and (nums[i]+nums[j]<=upper)):
                         sum+=1
                     j=j+1
+            i+=1
         return sum
 
         
